@@ -1,0 +1,46 @@
+#randomNumber {
+    line-height: 3em;
+    font-size: 64px;
+}
+
+.stats{
+    margin: 20px;
+}
+
+.jumbotron h1, h1 {
+    font-family: 'Princess Sofia', cursive;
+}
+
+h1 {
+    font-size: 56px;
+}
+
+.jumbotron h1 {
+    margin-bottom: 75px;
+    font-size: 82px;
+}
+
+.jumbotron p {
+    font-family: 'Catamaran', sans-serif;
+}
+
+.panel, .jumbotron {
+    background: transparent;
+    border: none;
+}
+
+hr {
+    border: 2px solid white;
+}
+
+.container {
+    border: 10px solid white;
+    border-radius: 40%;
+    padding: 90px 110px 90px 110px;
+}
+
+body {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    color: white;
+  }

@@ -16,12 +16,12 @@ $(document).ready(function() {
         // Dump the total into our total div              
         $("#total").text(total);
 
-        // Generate a random number
+        // Generate a random number between 19-120
         random = Math.floor(Math.random() * (120 - 19) + 1) + 19;
         // Dump the random number into our randomNumber div
         $("#randomNumber").text(random);
 
-        //Generate random values of crystals
+        //Generate random values of crystals between 1-12
         firstCrystal = Math.floor(Math.random() * 12) + 1;
         secondCrystal = Math.floor(Math.random() * 12) + 1;
         thirdCrystal = Math.floor(Math.random() * 12) + 1;
