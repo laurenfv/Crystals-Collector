@@ -16,80 +16,80 @@
         <!-- Added a link to stylesheet-->
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
-<body>
+    <body>
 
-<!-- Jumbotron for Title -->
-<div class="jumbotron">
-    <h1 class="text-center">Crystals Collector</h1>
-    <p class="text-center">You will be given a random number at the start of the game.</p>
-    <p class="text-center">By clicking on a crystal, you will add a specific amount of points to your total score.</p>
-    <p class="text-center">You will win by matching your total score to the to the random number. You will lose the game if your total score goes above the random number.</p>
-    <p class="text-center">The value of each crystal is hidden from you until you click on it.</p>
-    <p class="text-center">Each time the game starts, the game will change the value of each crystal.</p>
-    <button class="btn btn-default btn-lg plain-btn center-block"> Click to play!</button>
-</div>
+        <!-- Jumbotron for Title -->
+        <div class="jumbotron">
+            <h1 class="text-center">Crystals Collector</h1>
+            <p class="text-center">You will be given a random number at the start of the game.</p>
+            <p class="text-center">By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+            <p class="text-center">You will win by matching your total score to the random number. You will lose the game if your total score goes above the random number.</p>
+            <p class="text-center">The value of each crystal is hidden from you until you click on it.</p>
+            <p class="text-center">Each time the game starts, the game will change the value of each crystal.</p>
+            <button class="btn btn-default btn-lg plain-btn center-block"> Click to play!</button>
+        </div>
 
-<div class="container">
+        <div class="container">
 
-    <div class="row">
+            <div class="row">
 
-        <!-- Stats Panel -->
-        <div class="col-xs-12">
-            <div class="panel panel-default">
-                <div class="row">
-                    <div class="col-sm-4" id="line">
-                        <h1 class="text-center" id="randomNumber"></h1>
-                    </div>
-                    <div class="col-sm-3 stats">
-                        <h1 class="text-center">wins</h1>
-                        <hr>
-                        <h1 class="text-center" id="wins">0</h1>
-                    </div>
-                    <div class="col-sm-3 stats pull-right">
-                        <h1 class="text-center">losses</h1>
-                        <hr>
-                        <h1 class="text-center" id ="losses">0</h1>
+                <!-- Stats Panel -->
+                <div class="col-xs-12">
+                    <div class="panel panel-default">
+                        <div class="row">
+                            <div class="col-sm-4" id="line">
+                                <h1 class="text-center" id="randomNumber"></h1>
+                            </div>
+                            <div class="col-sm-3 stats">
+                                <h1 class="text-center">wins</h1>
+                                <hr>
+                                <h1 class="text-center" id="wins">0</h1>
+                            </div>
+                            <div class="col-sm-3 stats pull-right">
+                                <h1 class="text-center">losses</h1>
+                                <hr>
+                                <h1 class="text-center" id ="losses">0</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Crystals Panel -->
+                <div class="col-xs-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body text-center" id="crystals">
+                                <div class="col-md-3 col-xs-6">
+                                    <img src="assets/images/ruby.png" alt="ruby" class="img" id="img1" style = "height: 200px">
+                                </div>
+                                <div class="col-md-3 col-xs-6">
+                                    <img src="assets/images/sapphire.png" alt="sapphire" class="img" id="img2" style = "height: 200px">
+                                </div>
+                                <div class="col-md-3 col-xs-6">
+                                    <img src="assets/images/emerald.png" alt="emerald" class="img" id="img3" style = "height: 200px">
+                                </div>
+                                <div class="col-md-3 col-xs-6">                 
+                                    <img src="assets/images/topaz.png" alt="topaz" class="img" id="img4" style = "height: 200px">              
+                                </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Total Panel -->
+                <div class="col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h1 class="text-center">total</h1>
+                                <hr>
+                                <h1 class="text-center" id="total">0</h1>
+                            </div>
+                        </div>
+                </div>
+            
+            
             </div>
         </div>
 
-        <!-- Crystals Panel -->
-        <div class="col-xs-12">
-            <div class="panel panel-default">
-                <div class="panel-body text-center" id="crystals">
-                        <div class="col-md-3 col-xs-6">
-                            <img src="assets/images/ruby.png" alt="ruby" class="img" id="img1" style = "height: 200px">
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <img src="assets/images/sapphire.png" alt="sapphire" class="img" id="img2" style = "height: 200px">
-                        </div>
-                        <div class="col-md-3 col-xs-6">
-                            <img src="assets/images/emerald.png" alt="emerald" class="img" id="img3" style = "height: 200px">
-                        </div>
-                        <div class="col-md-3 col-xs-6">                 
-                            <img src="assets/images/topaz.png" alt="topaz" class="img" id="img4" style = "height: 200px">              
-                        </div> 
-                </div>
-            </div>
-        </div>
+        <script src="assets/javascript/game.js"></script>
 
-        <!-- Total Panel -->
-        <div class="col-xs-12">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <h1 class="text-center">total</h1>
-                        <hr>
-                        <h1 class="text-center" id="total">0</h1>
-                    </div>
-                </div>
-        </div>
-    
-    
-    </div>
-</div>
-
-<script src="assets/javascript/game.js"></script>
-
-</body>
+    </body>
 </html>
