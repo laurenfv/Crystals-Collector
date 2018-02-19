@@ -37,6 +37,7 @@ hr {
     border: 10px solid #fff;
     border-radius: 15%;
     margin-bottom: 60px;
+    padding: 50px;
 }
 
 body {
@@ -54,9 +55,9 @@ button {
     color: #435645;
 }
 
-.panel-body {
+/* .panel-body {
     padding-bottom: 70px;
-}
+} */
 
 .row {
     margin: 0;
