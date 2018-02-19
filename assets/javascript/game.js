@@ -10,6 +10,7 @@ $(document).ready(function() {
     var wins = 0;
     var losses = 0;
 
+
     // Use a function to initialize our game, and reset it when user wins or loses.
     var initializeGame = function() {
         total = 0;
@@ -94,7 +95,19 @@ $(document).ready(function() {
 
     });
 
-    // Call initializeGame so we can set the state of our app
-    initializeGame();
+    $(".container").hide();
+
+    $("button").on("click", function() {
+        
+        //When button is pressed, show game play container
+        $("button").hide();
+        $("p").hide();
+        $(".container").show().css("margin-top", "0");
+        $(".jumbotron").css("padding-bottom", "0");
+
+        // Call initializeGame so we can set the state of our app
+        initializeGame();
+
+    });
 
 });

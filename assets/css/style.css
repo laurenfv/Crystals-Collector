@@ -30,17 +30,34 @@ h1 {
 }
 
 hr {
-    border: 2px solid white;
+    border: 2px solid #fff;
 }
 
 .container {
-    border: 10px solid white;
-    border-radius: 40%;
-    padding: 90px 110px 90px 110px;
+    border: 10px solid #fff;
+    border-radius: 15%;
+    margin-bottom: 60px;
 }
 
 body {
     background-image: url('../images/background.jpg');
     background-size: cover;
-    color: white;
+    color: #fff;
   }
+
+button {
+    margin: 70px;
+    font-family: 'Princess Sofia', cursive;
+}
+.btn-lg {
+    font-size: 32px;
+    color: #435645;
+}
+
+.panel-body {
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
