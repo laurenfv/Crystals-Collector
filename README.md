@@ -1,7 +1,7 @@
 # Crystals-Collector
 > Crystals Collector is a front-end web game that's a bit of a brain teaser!
 
-![](header.png)
+![picture](assets/images/cc.png)
 
 ## Technologies Used
 
